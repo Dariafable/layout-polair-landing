@@ -1,0 +1,134 @@
+@import '../variables';
+
+.help {
+  padding: 64px 0;
+
+  @media screen and (max-width: 480px) {
+    padding: 52px 0;
+  }
+
+  .help-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .section-title {
+    margin-bottom: 16px;
+  }
+
+  .help-content {
+    margin-bottom: 32px;
+    max-width: 282px;
+
+    @media screen and (max-width: 1104px) {
+      max-width: none;
+    }
+
+    .subtitle {
+      margin-bottom: 8px;
+      color: $gray-dark;
+      font-size: 1.1rem;
+      line-height: 1.2;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .text {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      font-weight: 400;
+      color: $black-light;
+    }
+  }
+
+  .help-equipment {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 24px;
+
+    @media screen and (max-width: 823px) {
+      gap: 40px;
+    }
+
+    .equipment-item {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      margin-top: 130px;
+      max-width: 384px;
+
+      background-color: $blue-background;
+
+      @media screen and (max-width: 823px) {
+        max-width: 100%;
+      }
+    }
+
+    .equip-description {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      @media screen and (max-width: 420px) {
+        padding: 32px 16px;
+      }
+    }
+
+    .equip-title {
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 1.1;
+      color: $black-medium;
+
+      @media screen and (max-width: 420px) {
+        font-size: 2.3rem;
+      }
+    }
+
+    .equip-text {
+      margin-bottom: 40px;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.7;
+      color: $black-light;
+    }
+
+    .equip-button {
+      margin-top: auto;
+      align-self: flex-start;
+
+      @media screen and (max-width: 420px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -130px;
+
+      @media screen and (max-width: 420px) {
+        margin-bottom: -140px;
+      }
+    }
+
+    .equip-img {
+      transform: translateY(-45%);
+      width: 384px;
+      height: 308px;
+
+      @media screen and (max-width: 420px) {
+        width: 288px;
+        height: 230px;
+        transform: translateY(-60%);
+      }
+    }
+  }
+}

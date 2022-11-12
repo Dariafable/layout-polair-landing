@@ -1,0 +1,98 @@
+@import '../variables';
+
+.header {
+  border-bottom: 1px solid $gray-20pc;
+
+  .firm-info {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .firm-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .firm-logo {
+      margin-right: 24px;
+
+      .logo-svg {
+        width: 200px;
+        height: 32px;
+
+        @media screen and (max-width: 480px) {
+          width: 129px;
+          height: 20px;
+        }
+      }
+    }
+
+    .firm-desc {
+      max-width: 360px;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: $gray-dark;
+
+      @media screen and (max-width: 780px) {
+        display: none;
+      }
+    }
+  }
+
+  .options {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: $blue;
+    cursor: pointer;
+  }
+
+  .options-content {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    transition: color 0.2s linear;
+
+    p:hover {
+      color: $black-light;
+    }
+  }
+
+  .email {
+    margin-right: 7px;
+    width: 15px;
+    height: 12px;
+  }
+
+  .language {
+    transition: color 0.2s linear;
+
+    p:hover {
+      color: $black-light;
+    }
+  }
+
+  .search {
+    margin-left: 32px;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 540px) {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../variables';
+
+.more-info {
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $black-medium;
+  cursor: pointer;
+  transition: margin-left 0.1s linear;
+
+  &:hover {
+    margin-left: 8px;
+  }
+
+  .arrow-icon {
+    margin: 3px 0 0 4px;
+    transform: rotate(-90deg);
+  }
+
+  &--reverse {
+    transition: margin-right 0.1s linear;
+    &:hover {
+      margin-right: 8px;
+    }
+  }
+}

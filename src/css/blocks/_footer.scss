@@ -1,0 +1,355 @@
+@import '../variables';
+
+.footer {
+  padding: 72px 0;
+  background-color: $blue;
+  color: $gray-20pc;
+
+  @media screen and (max-width: 480px) {
+    padding: 32px 0;
+  }
+
+  /* Footer navigation */
+  .footer-nav {
+    margin-bottom: 88px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 163px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 32px;
+      grid-template-columns: 1fr;
+      justify-items: stretch;
+      gap: 12px;
+    }
+  }
+
+  .nav-icon {
+    margin-left: 6px;
+  }
+
+  /* Product item */
+  .product-item {
+    grid-column: span 2;
+    color: $gray-20pc;
+
+    @media screen and (max-width: 1024px) {
+      grid-column: auto;
+    }
+  }
+
+  .product-blocks {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 0;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $blue-medium;
+    }
+  }
+
+  .product-list {
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  .list-icon {
+    display: none;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+
+    &:hover {
+      transform: rotate(-180deg);
+    }
+
+    .list-arrow {
+      fill: $gray-light;
+      width: 12px;
+      height: 6px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+
+  .product-title {
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .title-link {
+      font-weight: 600;
+      font-size: 2.1rem;
+      line-height: 1.2;
+      color: $white;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .product-menu {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .product-text {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .product-link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: $gray-20pc;
+  }
+
+  .product-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: 24px;
+    border-top: 1px solid $blue-medium;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .services-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-align: right;
+  }
+  /* product item end */
+
+  /* Support item */
+
+  .support-list {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .support-title {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 0;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $blue-medium;
+    }
+    .title-link {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      color: $white;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .support-text {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .support-link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: $gray-20pc;
+  }
+  /* support item end */
+
+  /* Options item */
+  .option-title {
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $blue-medium;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .option-link {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: $white;
+
+    @media screen and (max-width: 1024px) {
+      font-weight: 600;
+      font-size: 1.7rem;
+    }
+  }
+  /* options item end */
+  /* navigation end */
+
+  /* Company general info */
+  .footer-company {
+    padding-top: 88px;
+    border-top: 1px solid $blue-medium;
+
+    @media screen and (max-width: 1024px) {
+      border-top: none;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding-top: 24px;
+    }
+  }
+
+  .company-item {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .company-block {
+    flex: 0 0 50%;
+
+    @media screen and (max-width: 480px) {
+      flex: 0 0 100%;
+    }
+  }
+
+  .company-logo {
+    width: 200px;
+    height: 32px;
+
+    @media screen and (max-width: 480px) {
+      width: 181px;
+      height: 29px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .company-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px;
+
+    @media screen and (max-width: 480px) {
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+
+  .phone-info {
+    @media screen and (max-width: 480px) {
+      text-align: start;
+    }
+  }
+
+  .phone-number {
+    margin-bottom: 1px;
+    font-weight: 600;
+    font-size: 2.1rem;
+    color: $white;
+  }
+
+  .company-social {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 418px) {
+      margin-bottom: 36px;
+    }
+  }
+
+  .social-link {
+    margin-right: 6px;
+    padding: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .company-name {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .block-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .company-link {
+    span {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+  }
+
+  .company-rule {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: $gray-light;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  /* company general info end */
+}

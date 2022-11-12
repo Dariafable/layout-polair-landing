@@ -1,0 +1,87 @@
+@import '../variables';
+
+.stats {
+  padding: 80px 0;
+  background-color: $blue;
+  color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    padding: 46px 0;
+  }
+
+  .stats-info {
+    margin: 0 auto;
+    max-width: 788px;
+    margin-bottom: 101px;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 48px;
+    }
+
+    .text {
+      font-weight: 400;
+      font-size: 2.3rem;
+      line-height: 1.2;
+      text-align: center;
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .stats-numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 490px) {
+      justify-content: center;
+      gap: 34px;
+    }
+
+    .numbers-item {
+      position: relative;
+      padding: 5px 10px;
+    }
+
+    .number-icon {
+      position: absolute;
+      bottom: 0;
+      left: -47px;
+      z-index: 1;
+
+      @media screen and (max-width: 471px) {
+        left: 5px;
+      }
+
+      &--adapt {
+        @media screen and (max-width: 471px) {
+          left: 80px;
+        }
+      }
+    }
+
+    .number-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .number-title {
+      margin-bottom: 8px;
+      font-size: 5.1rem;
+      font-weight: 600;
+      position: relative;
+      z-index: 2;
+
+      span {
+        font-size: 1.6rem;
+      }
+    }
+
+    .number-text {
+      font-size: 1.5rem;
+    }
+  }
+}

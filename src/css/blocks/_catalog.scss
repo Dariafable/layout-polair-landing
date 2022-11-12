@@ -1,0 +1,29 @@
+@import '../variables';
+
+.catalog {
+  padding: 160px 0 48px;
+  background: url('../img/berries-catalog.png') center / cover no-repeat;
+  height: 100%;
+
+  .section-title {
+    margin-bottom: 16px;
+  }
+
+  .catalog-content {
+    padding: 40px;
+    max-width: 472px;
+    background-color: $blue-background;
+
+    @media screen and (max-width: 460px) {
+      padding: 24px 16px;
+    }
+  }
+
+  .catalog-text {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: $black-light;
+  }
+}

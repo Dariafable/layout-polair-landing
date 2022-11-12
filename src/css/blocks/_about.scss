@@ -1,0 +1,55 @@
+@import '../variables';
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: $blue-background;
+
+  @media screen and (max-width: 990px) {
+    grid-template-columns: 1fr;
+  }
+
+  .img-block {
+    overflow: hidden;
+
+    .about-img {
+      object-fit: cover;
+      object-position: center;
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content-block {
+    padding: 104px 0 80px 104px;
+
+    @media screen and (max-width: 480px) {
+      padding: 46px 16px 56px;
+    }
+  }
+
+  .content-description {
+    max-width: 418px;
+
+    .subtitle {
+      margin-bottom: 8px;
+      color: $gray-dark;
+      font-size: 1.1rem;
+      line-height: 1.2;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .text {
+      margin-bottom: 32px;
+      font-size: 1.4rem;
+      line-height: 1.6;
+      font-weight: 400;
+      color: $black-light;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 16px;
+  }
+}
